@@ -2,7 +2,8 @@ name: My First WF | Shell Script
 
 on:
     push:
-        branches: main
+        branches: 
+         - main
 jobs:
   first_job:
     runs-on: ubuntu-latest
