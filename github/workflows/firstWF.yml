@@ -1,0 +1,14 @@
+name: My First WF | Shell Script
+
+on:
+    push:
+        branches: main
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List files
+        run: ls -ltra
+
+      - name: Run Shell Script
+        run: echo "Hello From 1st Workflow"
