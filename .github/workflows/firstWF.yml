@@ -1,5 +1,4 @@
 name: My First WF | Shell Script
-
 on:
     push:
         branches: 
