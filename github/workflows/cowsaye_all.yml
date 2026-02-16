@@ -1,0 +1,23 @@
+name: cowsay dragon wf
+on: push
+jobs:
+    cowsay_dragon:
+        runs-on: ubuntu-latest  #Will Run On Container
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4.1.7
+
+            - name: install cowsay program
+              run: sudo apt-get install cowsay -y
+
+            - name: execute cowsay cmd
+              run: cowsay -f dragon "Run For Cover, I am a Dragon....RAWR" >> dragon.txt
+
+            - name: Test File Exists
+              run: grep -i "dragon" dragon.txt
+
+            - name: Read File
+              run: cat dragon.txt
+
+            - name: checkout repo files
+              run: ls
