@@ -2,7 +2,7 @@ name: cowsay dragon wf
 on: push
 jobs:
     cowsay_dragon:
-        runs-on: ubuntu-latest  #Will Run On Container
+        runs-on: ubuntu-latest  
         steps:
             - name: Checkout
               uses: actions/checkout@v4.1.7
