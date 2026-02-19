@@ -1,6 +1,7 @@
 name: cowsay dragon wf
 
-on: push
+on:
+  workflow_dispatch:
 
 jobs:
   cowsay_dragon:
