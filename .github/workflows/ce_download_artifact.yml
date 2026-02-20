@@ -1,7 +1,8 @@
 name: cowsay dragon wf + download artifact
 
 on:
-  workflow_dispatch:
+  push: 
+    branches: main
 
 jobs:
 
